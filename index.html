@@ -1,26 +1,23 @@
 <html>
 <head>
-<script>
-function newDoc() {
-    window.location.assign("http://www.w3schools.com")
-}
-</script>
+<title>Counting Class Project</title>
+ <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
 </head>
 <body>
+<center><h2>To View: Right Click -> Select "Inspect Element" -> Select Console Tab</h2></center>
 <script>
 var count = 1;
 while(count < 101){
-	if(count % 5 === 0){
-		console.log('Slash!');
-	}else if(count % 3 === 0){
-		console.log('Dot!');
+	if((count % 5 === 0) && (count % 3 === 0)){
+		console.log('DotDash!');
 	}else{
-		
-	if((count % 5 === 0)) && (count % 3 === 0){
-		console.log('SlashDot!');
-	}
-	
-	
+		if(count % 5 === 0){
+			console.log('Dash!');
+		}else if(count % 3 === 0){
+			console.log('Dot!');
+		}else{
+			console.log(count);
+		}			
 	}
 	count++;
 }
